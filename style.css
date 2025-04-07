@@ -2,41 +2,70 @@ body {
     margin: 0px 0px 0px 0px;
     display: flex;
     flex-direction: column;
-    min-height: 95vh;
+    min-height: 99vh;
 }
 
 nav {
-    background-color: midnightblue;
+    background-color: #BCCCDC;
     display: flex;
+    justify-content: space-between;
+}
+
+ul li.nav-bar-list {
+    display: inline-block;
 }
 
 .nav-list {
-    display: flex;
     gap: 20px;
     list-style-type: none;
+    margin-right: 10px;
+}
+
+.nav-brand {
+    color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 10px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.self-image {
+    float: left;
+    margin-top: 10px;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: Black;
     padding: 5px;
 }
 
 a:hover {
-    color: midnightblue;
-    background-color: White;
-    border: 2px solid black;
-    border-radius: 50%;
-    cursor: ;
+    color: orangered;
 }
 
 .main {
-    flex: 1;
-    margin: 0px 50px 0px 50px;
+   display: grid;
+   margin: 0px 20px 0px 20px;
+   grid-template-columns: 1fr 1fr;
+   height: 90vh;
+   gap: 20px;
 }
 
 .self {
-    width: 50%;
+    background-color: #F2F9FF;
+    color: black;
+    border-radius: 20px;
 }
 
 .self-image {
@@ -45,7 +74,6 @@ a:hover {
     border-radius: 50%;
     position: static;
     margin-left: 20px;
-    float: left;
     margin-right: 20px;
 }
 
@@ -57,34 +85,43 @@ a:hover {
     font-weight: bold;
 }
 
-footer {
-    text-align: right;
-    clear: both;
-    margin-right: 20px;
+.skills-card {
+    background-color: #FFCCE1;
+    border-radius: 20px;
+}
+
+.self, .skills-card {
+    height: 600px;
+}
+
+.skills-h2 {
+    text-decoration: underline;
+    margin-left: 10px;
 }
 
 @media (max-width: 680px) {
-    
-    body {
-        margin-right: 20px;
-        margin-left: 10px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
     }
+
+    .nav-list {
+        gap: 5px;
+    }
+    
 
     h2 {
         font-size: 1rem;
     }
 
-    .self {
-        width: 100%;
-        text-align: justify;
+    .main {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px 0px 10px;
     }
 
-    .self-image {
-        height: 230px;
-        width: 100%;
-        display: inline;
-        object-fit: cover;
-        margin-left: 0px;
-        margin-bottom: 20px;
+    .self, .skills-card {
+        height: 100%;
     }
 }
