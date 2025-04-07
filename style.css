@@ -22,8 +22,8 @@ ul li.nav-bar-list {
 }
 
 .nav-brand {
-    color: orange;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-family: 'Times New Roman', Times, serif;
     margin-right: 10px;
 }
 
@@ -56,7 +56,7 @@ a:hover {
 
 .main {
    display: grid;
-   margin: 0px 20px 0px 20px;
+   margin: 10px 20px 0px 20px;
    grid-template-columns: 1fr 1fr;
    height: 90vh;
    gap: 20px;
@@ -118,7 +118,7 @@ a:hover {
     .main {
         display: flex;
         flex-direction: column;
-        margin: 0px 10px 0px 10px;
+        margin: 10px 10px 0px 10px;
     }
 
     .self, .skills-card {
